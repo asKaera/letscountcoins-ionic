@@ -16,7 +16,6 @@ export class CurrencyListPage {
   curencySymbol: string;
 
   constructor(
-    private tabsPage: TabsPage,
     public navCtrl: NavController, 
     public navParams: NavParams,
     private CurrencyProvider: CurrencyProvider, 
