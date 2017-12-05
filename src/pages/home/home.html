@@ -1,18 +1,33 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+  <ion-header>
+    <ion-navbar>
+      <ion-title>Let's count coins!</ion-title>
+    </ion-navbar>
+  </ion-header>
+<ion-content padding class="game-page">
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <div *ngIf="selectedICurrency">
+    <div>
+      <p> {{selectedICurrency.symbol_prefix}} {{price}} {{selectedICurrency.symbol_suffix}} </p>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+      <img *ngFor='let currencyCoinNominal of selectedICurrency.nominal' width="75" height="75" [src]="getImageSourceByNominal(selectedICurrency.code, currencyCoinNominal)"
+        (click)="createCoin(selectedICurrency.code, currencyCoinNominal);" />
+        
+    </div>
+      <p *ngIf="showHint"> {{selectedICurrency.symbol_prefix}} {{hint}} {{selectedICurrency.symbol_suffix}}</p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+      <button ion-button round (click)="showResult()"> Done</button>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3 id=gridCoins>
+            <!-- This column will be 12 columns wide by default,
+              9 columns at the small breakpoint, 
+              6 at the medium breakpoint, 4 at large, and 3 at xl.--> 
+            <img *ngFor='let coin of selectedICoins' width="75" height="75" [src]="getImageSourceByNominal(coin.coinCode, coin.coinNominal)"
+              (click)="removeCoin(coin.id);" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+  </div>
 </ion-content>

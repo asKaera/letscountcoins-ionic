@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="settings-page">
+  <ion-card>
+    <ion-card-content id=cardHint>
+      <button ion-item (click)="openCurrencyList()">
+        <ion-label>Currency</ion-label>
+        <ion-note item-end>{{curencySymbol}}</ion-note>
+      </button>
+      <ion-item>
+        <ion-label> Hint</ion-label>
+        <ion-toggle [(ngModel)]="hint" color="primary" checked="true" (ionChange)="savePreferencesHint()"></ion-toggle>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

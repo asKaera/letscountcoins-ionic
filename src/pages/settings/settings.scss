@@ -1,0 +1,20 @@
+page-settings {
+    $whiteText:  #ffffff;
+    
+    $toggle-ios-background-color-off:#488aff;
+    ion-scroll { white-space: nowrap; }
+    #cardCurrency {
+        background-color: #488aff;
+        p{
+            color: $whiteText;
+        }
+    }
+    #cardHint {
+        background-color: #488aff;
+        p{
+            color: $whiteText;
+        }
+    }     
+             
+} 
+   

@@ -1,0 +1,134 @@
+[
+    {
+        "symbol": "AU$",
+        "name": "Australian Dollar",
+        "symbol_prefix": "$",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "AUD",
+        "name_plural": "Australian dollars",
+        "nominal": [5, 10, 20, 50, 100, 200]
+    },
+    {
+        "symbol": "CA$",
+        "name": "Canadian Dollar",
+        "symbol_prefix": "$",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "CAD",
+        "name_plural": "Canadian dollars",
+        "nominal": [5, 10, 25, 100, 200]
+    },
+    {
+        "symbol": "CN¥",
+        "name": "Chinese Yuan",
+        "symbol_prefix": "¥",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "CNY",
+        "name_plural": "Chinese yuan",
+        "nominal": [1, 2, 5, 10, 50, 100]
+    },
+    {
+        "symbol": "€",
+        "name": "Euro",
+        "symbol_prefix": "€",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "EUR",
+        "name_plural": "euros",
+        "nominal": [1, 2, 5, 10, 20, 50, 100, 200]
+    },
+    {
+        "symbol": "£",
+        "name": "British Pound Sterling",
+        "symbol_prefix": "£",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "GBP",
+        "name_plural": "British pounds sterling",
+        "nominal": [1, 2, 5, 10, 20, 50, 100, 200]
+    },
+    {
+        "symbol": "₪",
+        "name": "Israeli New Sheqel",
+        "symbol_prefix": "₪",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "ILS",
+        "name_plural": "Israeli new sheqels",
+        "nominal": [10, 50, 100, 200, 500, 1000]
+    },
+    {
+        "symbol": "Rs",
+        "name": "Indian Rupee",
+        "symbol_prefix": "₹",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "INR",
+        "name_plural": "Indian rupees",
+        "nominal": [50, 100, 200, 500, 1000]
+    },
+    {
+        "symbol": "¥",
+        "name": "Japanese Yen",
+        "symbol_prefix": "￥",
+        "symbol_suffix": "",
+        "decimal_digits": 0,
+        "rounding": 0,
+        "code": "JPY",
+        "name_plural": "Japanese yen",
+        "nominal": [1, 5, 10, 50, 100, 500]
+    },
+    {
+        "symbol": "₩",
+        "name": "South Korean Won",
+        "symbol_prefix": "",
+        "symbol_suffix": "₩",
+        "decimal_digits": 0,
+        "rounding": 0,
+        "code": "KRW",
+        "name_plural": "South Korean won",
+        "nominal": [10, 50, 100, 500]
+    },
+    {
+        "symbol": "MX$",
+        "name": "Mexican Peso",
+        "symbol_prefix": "$",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "MXN",
+        "name_plural": "Mexican pesos",
+        "nominal": [5, 10, 20, 50, 100, 200, 500, 1000]
+    },
+    {
+        "symbol": "RUB",
+        "name": "Russian Ruble",
+        "symbol_prefix": "",
+        "symbol_suffix": "руб.",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "RUB",
+        "name_plural": "Russian rubles",
+        "nominal": [1, 5, 10, 50, 100, 200, 500, 1000]
+    },
+    {
+        "symbol": "$",
+        "name": "US Dollar",
+        "symbol_prefix": "$",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "USD",
+        "name_plural": "US dollars",
+        "nominal": [1, 5, 10, 25, 100]
+    }
+]

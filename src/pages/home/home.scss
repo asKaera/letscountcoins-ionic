@@ -1,3 +1,12 @@
 page-home {
-
+    $whiteText:  #ffffff;
+    #cardTitle{
+        background-color: #488aff;
+        h2{
+            color: $whiteText;
+        }
+    }     
+   p{
+    font-size:large;
+   } 
 }
