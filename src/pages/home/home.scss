@@ -9,4 +9,17 @@ page-home {
    p{
     font-size:large;
    } 
+  
 }
+.alert-danger {
+    .alert-head {
+      background: map-get($colors, danger);
+      
+    }
+  }
+  .alert-success {
+    .alert-head {
+      background: map-get($colors, secondary);
+     
+    }
+  }

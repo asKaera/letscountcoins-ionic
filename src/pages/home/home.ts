@@ -83,8 +83,8 @@ export class HomePage {
   showResult() {
     if (this.price == this.formatter(this.coinsTotal)) {
       let alert = this.atrCtrl.create({
+        cssClass: 'alert-success',
         title: 'You WON!',
-        subTitle: 'Play new game!',
         buttons: [{
           text: 'New Game',
           handler: data => {
@@ -96,7 +96,7 @@ export class HomePage {
     } else {
       let alert = this.atrCtrl.create({
         title: 'You LOSE!',
-        subTitle: 'Play new game!',
+        cssClass: 'alert-danger',
         buttons: [{
           text: 'New Game',
           handler: data => {

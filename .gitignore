@@ -35,6 +35,7 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 .settings/
 .project
+.metadata
 /.sourcemaps/
 /.classpath
 /typings/

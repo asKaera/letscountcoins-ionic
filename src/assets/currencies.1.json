@@ -1,5 +1,27 @@
 [
     {
+        "symbol": "AMD",
+        "name": "Armenian Dram",
+        "symbol_prefix": "",
+        "symbol_suffix": "դր.",
+        "decimal_digits": 0,
+        "rounding": 0,
+        "code": "AMD",
+        "name_plural": "Armenian drams",
+        "nominal": [1000, 2000, 5000, 10000, 20000, 50000]
+    },
+    {
+        "symbol": "AR$",
+        "name": "Argentine Peso",
+        "symbol_prefix": "$",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "ARS",
+        "name_plural": "Argentine pesos",
+        "nominal": [5, 10, 25, 50, 100, 200, 500]
+    },
+    {
         "symbol": "AU$",
         "name": "Australian Dollar",
         "symbol_prefix": "$",
@@ -9,6 +31,39 @@
         "code": "AUD",
         "name_plural": "Australian dollars",
         "nominal": [5, 10, 20, 50, 100, 200]
+    },
+    {
+        "symbol": "₼",
+        "name": "Azerbaijani Manat",
+        "symbol_prefix": "",
+        "symbol_suffix": "AZN",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "AZN",
+        "name_plural": "Azerbaijani manats",
+        "nominal": [1, 3, 5, 10, 20, 50]
+    },
+    {
+        "symbol": "R$",
+        "name": "Brazilian Real",
+        "symbol_prefix": "R$",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "BRL",
+        "name_plural": "Brazilian reals",
+        "nominal": [1, 5, 10, 25, 50, 100]
+    },
+    {
+        "symbol": "BYR",
+        "name": "Belarusian Ruble",
+        "symbol_prefix": "",
+        "symbol_suffix": "руб.",
+        "decimal_digits": 0,
+        "rounding": 0,
+        "code": "BYR",
+        "name_plural": "Belarusian rubles",
+        "nominal": [1, 2, 5, 10, 20, 50, 100, 200]
     },
     {
         "symbol": "CA$",
@@ -22,6 +77,17 @@
         "nominal": [5, 10, 25, 100, 200]
     },
     {
+        "symbol": "CHF",
+        "name": "Swiss Franc",
+        "symbol_prefix": "",
+        "symbol_suffix": "Fr",
+        "decimal_digits": 2,
+        "rounding": 0.05,
+        "code": "CHF",
+        "name_plural": "Swiss francs",
+        "nominal": [5, 10, 20, 50, 100, 200, 500]
+    },
+    {
         "symbol": "CN¥",
         "name": "Chinese Yuan",
         "symbol_prefix": "¥",
@@ -31,6 +97,28 @@
         "code": "CNY",
         "name_plural": "Chinese yuan",
         "nominal": [1, 2, 5, 10, 50, 100]
+    },
+    {
+        "symbol": "CO$",
+        "name": "Colombian Peso",
+        "symbol_prefix": "$",
+        "symbol_suffix": "",
+        "decimal_digits": 0,
+        "rounding": 0,
+        "code": "COP",
+        "name_plural": "Colombian pesos",
+        "nominal": [5000, 10000, 20000, 50000, 100000]
+    },
+    {
+        "symbol": "Dkr",
+        "name": "Danish Krone",
+        "symbol_prefix": "",
+        "symbol_suffix": "kr",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "DKK",
+        "name_plural": "Danish kroner",
+        "nominal": [100, 200, 500, 1000, 2000]
     },
     {
         "symbol": "€",
@@ -52,6 +140,17 @@
         "rounding": 0,
         "code": "GBP",
         "name_plural": "British pounds sterling",
+        "nominal": [1, 2, 5, 10, 20, 50, 100, 200]
+    },
+    {
+        "symbol": "GEL",
+        "name": "Georgian Lari",
+        "symbol_prefix": "",
+        "symbol_suffix": "ლ",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "GEL",
+        "name_plural": "Georgian laris",
         "nominal": [1, 2, 5, 10, 20, 50, 100, 200]
     },
     {
@@ -77,6 +176,17 @@
         "nominal": [50, 100, 200, 500, 1000]
     },
     {
+        "symbol": "Ikr",
+        "name": "Icelandic Króna",
+        "symbol_prefix": "",
+        "symbol_suffix": "kr",
+        "decimal_digits": 0,
+        "rounding": 0,
+        "code": "ISK",
+        "name_plural": "Icelandic krónur",
+        "nominal": [1, 5, 10, 50, 100]
+    },
+    {
         "symbol": "¥",
         "name": "Japanese Yen",
         "symbol_prefix": "￥",
@@ -99,6 +209,17 @@
         "nominal": [10, 50, 100, 500]
     },
     {
+        "symbol": "KZT",
+        "name": "Kazakhstani Tenge",
+        "symbol_prefix": "",
+        "symbol_suffix": "тңг.",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "KZT",
+        "name_plural": "Kazakhstani tenges",
+        "nominal": [1, 2, 5, 10, 20, 50, 100]
+    },
+    {
         "symbol": "MX$",
         "name": "Mexican Peso",
         "symbol_prefix": "$",
@@ -108,6 +229,28 @@
         "code": "MXN",
         "name_plural": "Mexican pesos",
         "nominal": [5, 10, 20, 50, 100, 200, 500, 1000]
+    },
+    {
+        "symbol": "Nkr",
+        "name": "Norwegian Krone",
+        "symbol_prefix": "",
+        "symbol_suffix": "kr",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "NOK",
+        "name_plural": "Norwegian kroner",
+        "nominal": [100, 500, 1000, 2000]
+    },
+    {
+        "symbol": "NZ$",
+        "name": "New Zealand Dollar",
+        "symbol_prefix": "$",
+        "symbol_suffix": "",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "NZD",
+        "name_plural": "New Zealand dollars",
+        "nominal": [10, 20, 50, 100, 200]
     },
     {
         "symbol": "RUB",
@@ -121,6 +264,28 @@
         "nominal": [1, 5, 10, 50, 100, 200, 500, 1000]
     },
     {
+        "symbol": "Skr",
+        "name": "Swedish Krona",
+        "symbol_prefix": "",
+        "symbol_suffix": "kr",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "SEK",
+        "name_plural": "Swedish kronor",
+        "nominal": [100, 200, 500, 1000]
+    },
+    {
+        "symbol": "₴",
+        "name": "Ukrainian Hryvnia",
+        "symbol_prefix": "",
+        "symbol_suffix": "₴",
+        "decimal_digits": 2,
+        "rounding": 0,
+        "code": "UAH",
+        "name_plural": "Ukrainian hryvnias",
+        "nominal": [1, 2, 5, 10, 25, 50, 100]
+    },
+    {
         "symbol": "$",
         "name": "US Dollar",
         "symbol_prefix": "$",
@@ -129,6 +294,17 @@
         "rounding": 0,
         "code": "USD",
         "name_plural": "US dollars",
-        "nominal": [1, 5, 10, 25, 100]
+        "nominal": [1, 5, 10, 25, 50, 100]
+    },
+    {
+        "symbol": "UZS",
+        "name": "Uzbekistan Som",
+        "symbol_prefix": "",
+        "symbol_suffix": "Som",
+        "decimal_digits": 0,
+        "rounding": 0,
+        "code": "UZS",
+        "name_plural": "Uzbekistan som",
+        "nominal": [1, 5, 10, 25, 50, 100]
     }
 ]

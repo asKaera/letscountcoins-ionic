@@ -5,18 +5,10 @@
   </ion-header>
   
   <ion-content padding class="currencyList-page">
-   
         <ion-list radio-group  [(ngModel)]="curencySymbol">
             <ion-item *ngFor="let currency of currencies">
                 <ion-label>{{ currency.code }}</ion-label>
                 <ion-radio [value]="currency.code" (click)="savePreferencesCurrency(currency.code)"></ion-radio>
-              </ion-item>
-          
-          <!--<ion-item>
-            <ion-select #C (ionChange)="savePreferencesCurrency(C.value)">
-              <ion-option *ngFor="let currency of currencies">{{ currency.code }}</ion-option>
-            </ion-select>
-          </ion-item>-->
+            </ion-item>
         </ion-list> 
-      
   </ion-content>

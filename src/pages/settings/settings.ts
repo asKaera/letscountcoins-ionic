@@ -63,8 +63,6 @@ export class SettingsPage {
   openCurrencyList() {
     let profileModal = this.modalCtrl.create(CurrencyListPage, { curencySymbol: this.curencySymbol });
     profileModal.present();
-
-    //this.navCtrl.push(CurrencyListPage);
   }
 
   savePreferencesHint() {
