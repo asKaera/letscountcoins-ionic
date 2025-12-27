@@ -16,7 +16,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AppPreferences } from '@ionic-native/app-preferences';
 import { CurrencyProvider } from '../providers/currency';
-import { Pro } from '@ionic/pro';
 
 @NgModule({
   declarations: [
@@ -52,6 +51,7 @@ import { Pro } from '@ionic/pro';
 })
 export class AppModule {}
 
-const IonicPro = Pro.init('2fab8ba0', {
-  appVersion: "0.0.1"
-});
+// Ionic Pro removed - not needed for development
+// const IonicPro = Pro.init('2fab8ba0', {
+//   appVersion: "0.0.1"
+// });

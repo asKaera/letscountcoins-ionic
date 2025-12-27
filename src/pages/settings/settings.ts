@@ -41,47 +41,54 @@ export class SettingsPage {
     if (this.curencySymbol == null) {
       this.appPreferences.fetch('USER_SELECTED_CURRENCY').then((currency: string) => {
         this.curencySymbol = currency;
+        loading.dismiss();
       }).catch((err) => {
+        console.warn('AppPreferences not available (browser mode), using default currency');
+        this.curencySymbol = 'USD'; // Default currency for browser
         loading.dismiss();
       });
-    }
-
-    this.getHint().then(function () {
-      loading.dismiss();
-    }).catch((err) => {
-      loading.dismiss();
-
-      let alert = this.alertCtrl.create({
-        title: 'Communication Error',
-        subTitle: 'Oops, something has gone wrong',
-        buttons: ['Dismiss']
+    } else {
+      // Currency already set, just dismiss loading
+      this.getHint().then(() => {
+        loading.dismiss();
+      }).catch((err) => {
+        loading.dismiss();
+        console.error('Error getting hint:', err);
       });
-      alert.present();
-    });
+    }
   }
 
   openCurrencyList() {
-    let profileModal = this.modalCtrl.create(CurrencyListPage, { curencySymbol: this.curencySymbol });
-    profileModal.present();
+    try {
+      console.log('Opening currency list with symbol:', this.curencySymbol);
+      let profileModal = this.modalCtrl.create(CurrencyListPage, { curencySymbol: this.curencySymbol });
+      profileModal.present();
+    } catch (error) {
+      console.error('Error opening currency list:', error);
+      let alert = this.alertCtrl.create({
+        title: 'Error',
+        subTitle: 'Could not open currency list: ' + error.message,
+        buttons: ['OK']
+      });
+      alert.present();
+    }
   }
 
   savePreferencesHint() {
-    this.appPreferences.store('HINT', '' + this.hint);
+    this.appPreferences.store('HINT', '' + this.hint).catch((err) => {
+      console.warn('AppPreferences not available (browser mode), hint not saved');
+    });
   }
 
   getHint() {
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
       this.appPreferences.fetch('HINT').then((res) => {
-        this.hint = res;
+        this.hint = res === 'true' || res === true;
         resolve();
       }).catch((err) => {
-        let alert = this.alertCtrl.create({
-          title: 'Communication Error',
-          subTitle: 'Oops, something has gone wrong',
-          buttons: ['Dismiss']
-        });
-        alert.present();
-        reject();
+        console.warn('AppPreferences not available (browser mode), using default hint value');
+        this.hint = true; // Default hint value for browser
+        resolve(); // Resolve instead of reject so the app doesn't crash
       });
     });
   }
